@@ -1,0 +1,10 @@
+name: tutorial
+
+conda_env: conda.yml
+
+entry_points:
+  main:
+    parameters:
+      train/cross_val/predict: str
+      input_file:  str
+    command: "python model2.py --mode{train/cross_val/predict} --input{input_file}"

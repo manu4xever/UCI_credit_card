@@ -3,7 +3,7 @@ name: tutorial
 conda_env: conda.yml
 
 entry_points:
-  main:
+  main:model2.py
     parameters:
       train/cross_val/predict: str
       input_file:  str
